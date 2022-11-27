@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font: normal 15px Arial;
+}
+div{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+ 
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.venda{
+    display: flex;
+    align-items: center;
+    
+}
+
+.venda1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.centermiagui{
+    display: flex;
+    justify-content: center;
+
+}
+
+.centermiagui1{
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+img1{
+    height: 100px;
+    width: 100px;
+}
