@@ -18,4 +18,6 @@ else if(quantidade > 10){
     total_pagar = total - desconto;
 }
 
-alert(total_pagar); 
+total_a_pagar_formatado= total_pagar.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+alert(total_a_pagar_formatado); 
