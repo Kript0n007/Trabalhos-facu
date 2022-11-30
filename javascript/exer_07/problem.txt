@@ -1,0 +1,20 @@
+A prefeitura de uma cidade deseja fazer uma pesquisa entre seus habitantes. Faça
+um algoritmos para coletar dados sobre o salário e número de filhos de cada
+habitante e após as leituras, apresente:
+a. Média de salário da população;
+b. Média do número de filhos;
+c. Maior salário dos habitantes;
+d. Percentual de pessoas com salário menor que R$ 1.500,00.
+Requisitos de entrega:
+UC01 - Os dados devem ser apresentados na tabela após clicar no botão
+‘Adicionar’.
+UC02 - Campo nome deve ser do tipo string e não pode ser adicionado um
+valor em branco na tabela, um alerta deve ser disparado em tela para o
+usuário caso isso ocorra;
+UC03 - Campos número de filhos e salário devem ser do tipo numérico e
+não podem ser negativos, um alerta deve ser disparado caso seja
+informado um valor negativo;
+UC04 - Informações gerais devem ser atualizadas após a inserção de um
+novo dado na tabela ou clicando no botão “atualizar dados’.
+UC05 - A página deve seguir o wireframe abaixo, a estilização é por conta
+do desenvolvedor;

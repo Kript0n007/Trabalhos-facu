@@ -1,0 +1,9 @@
+Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito.
+Em seguida, calcule e apresente o saldo atual (saldo atual = saldo - débito +
+crédito). Para este exercício, deverão ser apresentadas as mensagens de erro
+segundo os tópicos abaixo: Também testar se saldo atual for maior ou igual a zero
+escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo
+Negativo'.
+a. Se o saldo atual for maior ou igual a zero escrever a mensagem 'Saldo
+Positivo';
+b. Se o saldo atual for menor que zero escrever a mensagem 'Saldo Negativo'.

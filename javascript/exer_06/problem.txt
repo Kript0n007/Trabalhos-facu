@@ -1,0 +1,14 @@
+Desenvolva uma tela de login, seguindo o exemplo do wireframe a seguir, e
+escreva um algoritmo para ler um número que é um código de usuário e uma
+senha.
+a. Caso este código seja diferente de um código armazenado internamente no
+algoritmo (igual a 1234) deve ser apresentada a mensagem ‘Usuário
+inválido!’.
+b. Caso o Código seja correto, deve ser lido outro valor que é a senha. Se esta
+senha estiver incorreta (a certa é 9999) deve ser mostrada a mensagem
+‘senha incorreta’.
+c. Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso
+permitido’.
+d. Desenvolva um botão de limpar, que limpa os valores dos campos e
+esconde as mensagens de erro caso tenham ocorrido.
+
