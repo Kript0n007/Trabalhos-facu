@@ -10,33 +10,30 @@
 <body>
     <div id="dfPessoas">
             <form name="fPessoas">
-                    <label >Nome</label><br>
-                    <input type="text" name="txtNome"/><br><br>
-                    <label >Sobrenome</label><br>
-                    <input type="text" name="txtSobrenome"/><br><br>
-                    <label >E-mail</label><br>
-                    <input type="text" name="txtEmail"/><br><br>
-                    <label >Altura</label><br>
-                    <input type="text" name="txtAltura"/><br><br>
-                    <label >Sexo</label><br>
-                    <input type="text" name="txtSexo"/><br><br>
-                    <input type="button" value="Adiciona Pessoa" onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, txtAltura.value, txtSexo.value)"/>
+                    <input type="text" id="nome" placeholder="Nome do cidadão"/>
+                    <input type="number" id="filhos" placeholder="Num.Filhos"/>
+                    <input type="text" id="salario" placeholder="Salário (R$)"/>
+                    <input type="button" value="Adiciona Pessoa" onclick="cadPessoa(nome.value,filhos.value,salario.value)"/>
             </form>
     </div>
     <br><br>
-    <div id="dtPessoas">
+    <div  class="ajustar" id="dtPessoas">
             <table id="tbPessoas">
                     <thead>
                         <tr>
-                            <td>Id</td>
                             <td>Nome</td>
-                            <td>Sobrenome</td>
-                            <td>E-mail</td>
-                            <td>Altura</td>
-                            <td>Sexo</td>
+                            <td>Número de filhos</td>
+                            <td>Salário</td>
                         </tr>
                     </thead>
             </table>
+    </div>
+    <div>
+        <h1>Informaçoes Gerais</h1>
+        <p id="Media_populaçao"></p>
+        <p id="Media_filhos"></p>
+        <p id="Media_habitantes"></p>
+        <p id="Media_salario"></p>
     </div>
 
 <script src="teste.js"></script>

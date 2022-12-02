@@ -28,8 +28,8 @@ if(homem1>homem2 && mulher1>mulher2){
     }
 
     document.getElementById("soma").innerHTML = "a soma das idades do homem"
-   + "mais velho com a mulher mais nova e: " + soma;
+   + " mais velho com a mulher mais nova e: " + soma;
     document.getElementById("mult").innerHTML = "o produto das idades do homem mais novo"
-    + "com a mulher mais velha e: " + mult;
+    + " com a mulher mais velha e: " + mult;
 
 }

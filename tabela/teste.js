@@ -1,29 +1,45 @@
 
-  var heading = document.createElement("h1");
-  var heading_text = document.createTextNode("Big Head!");
-  heading.appendChild(heading_text);
-  document.body.appendChild(heading);
+let Media_populaçao = document.getElementById("Media_populaçao").value;
+let Media_filhos = document.getElementById("Media_filhos").value;
+let Media_habitantes = document.getElementById("Media_habitantes").value;
+let Media_salario = document.getElementById("Media_salario").value;
 
+let contador_num=0;
 
-
-function  cadPessoa(nome, sobrenome, email, altura, sexo){
+function  cadPessoa(nome,filhos,Salario){
+  
+  filhos = Number(filhos);
+  Salario = Number(Salario);
+  
+   let num;
 
     let tb = document.getElementById("tbPessoas");
     let qtlinhas = tb.rows.length;
     let linha = tb.insertRow(qtlinhas);
 
-    let cellId = linha.insertCell(0);
-    let cellNome = linha.insertCell(1);
-    let cellSobrenome = linha.insertCell(2);
-    let cellEmail = linha.insertCell(3);
-    let cellAltura = linha.insertCell(4);
-    let cellSexo = linha.insertCell(5);
+    for(i=1;  i< contador_num ;  i++){
+        num = Salario;
+    }
 
-    cellId.innerHTML = qtlinhas;
-    cellNome.innerHTML = nome;
-    cellSobrenome.innerHTML = sobrenome;
-    cellEmail.innerHTML = email;
-    cellAltura.innerHTML = altura;
-    cellSexo.innerHTML =sexo;
+    if(nome == "" ){
+      alert("Adicione um nome");
+      console.log(contador_num);
+      console.log(num);
 
+    } else if(filhos < 0 || Salario <0){
+          alert("Adicione um valor positivo");
+
+    }else{
+
+      let cellNome = linha.insertCell(0);
+      let cellFilhos = linha.insertCell(1);
+      let cellSalario = linha.insertCell(2);
+      
+      cellNome.innerHTML = nome;
+      cellFilhos.innerHTML = Number(filhos);
+      cellSalario.innerHTML = Number(Salario);
+
+      contador_num++;
+      
+    }
 }
