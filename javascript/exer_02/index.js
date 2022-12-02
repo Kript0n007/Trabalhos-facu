@@ -4,10 +4,10 @@ let salario = null;
 let calculo = null;
 
 let botao = document.getElementById("botao")
+botao.addEventListener('click' ,calcular);
 
-
-botao.addEventListener('click', function(){
-
+function calcular(){
+    
     let num_de_horas_mes = document.getElementById("horas").value;
     let salario_hora = document.getElementById("salario").value;
 
@@ -23,9 +23,7 @@ botao.addEventListener('click', function(){
     
     document.getElementById("mostrar").innerHTML = salario_formatado;
 
-});
-
-
+}
 
 
 

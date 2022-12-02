@@ -1,16 +1,24 @@
-let numero_conta = prompt("Numero da conta");
-let saldo = prompt("Saldo da conta");
-let debito = prompt("Debito da conta");
-let credito = prompt("Credito da conta");
-let saldo_atual = null;
+let saldo_atual = 0;
+
+
+let botao = document.getElementById("calcular");
+botao.addEventListener("click",calcula);
+
+function calcula(){
+let numero_conta = document.getElementById("conta").value;
+let saldo = document.getElementById("saldo").value;
+let debito = document.getElementById("debito").value;
+let credito = document.getElementById("credito").value;
+
 
 saldo_atual = Number(saldo) - Number(debito) + Number(credito);
 
-alert(saldo_atual);
-
 if(saldo_atual >= 0){
-    alert("Saldo Positivo");
+    document.getElementById("atual").innerHTML = "Saldo positivo <br>";
 }
 else if(saldo_atual < 0){
-    alert("Saldo Negativo");
+    document.getElementById("atual").innerHTML = "Saldo Negativo <br>";
+}
+
+    document.getElementById("mostra").innerHTML = saldo_atual;
 }

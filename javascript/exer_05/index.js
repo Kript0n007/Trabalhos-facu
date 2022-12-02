@@ -1,7 +1,14 @@
-let nome_produto = prompt("Digite o nome do produto");
-let quantidade= Number(prompt("Digite a quantidade"));
-let preço = Number(prompt("Digite o preço unitario"));
 let total,total_pagar,desconto;
+
+let botao = document.getElementById("butao");
+botao.addEventListener("click",resultado);
+
+
+function resultado(){ 
+    
+    let nome_produto = Number(document.getElementById("nome").value);
+    let quantidade= Number(document.getElementById("quantidade").value);
+    let preço = Number(document.getElementById("preço").value);
 
 total = quantidade * preço;
 
@@ -20,4 +27,6 @@ else if(quantidade > 10){
 
 total_a_pagar_formatado= total_pagar.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-alert(total_a_pagar_formatado); 
+document.getElementById("mostra").innerHTML= total_a_pagar_formatado;
+
+}
